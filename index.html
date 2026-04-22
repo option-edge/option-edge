@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Option Edge</title>
+<link rel="icon" type="image/png" href="logo.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -40,10 +41,22 @@ z-index:1000;
 
 }
 
-.logo{
+/* .logo{
 font-size:24px;
 font-weight:600;
 color:#38bdf8;
+} */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo img {
+  height: 60px;
 }
 
 .nav-links{
@@ -777,7 +790,10 @@ font-size:36px;
 
 <nav>
 
-<div class="logo">OptionEdge</div>
+<div class="logo">
+  <img src="logo.png" alt="logo">
+  <span>OptionEdge</span>
+</div>
 
 <ul class="nav-links" id="navLinks">
 
@@ -803,7 +819,11 @@ Stop Guessing.<br>Start Trading Smart.
 
 <p>Join a professional trading community where you learn strategies, risk management and market psychology.</p>
 
-<button class="btn">Join Community</button>
+<a href="https://wa.me/917039909585" target="_blank">
+  <button class="btn">Join Community</button>
+</a>
+
+
 
 </div>
 
@@ -1063,29 +1083,29 @@ Reach out and our team will get back to you quickly.
 
 <!-- CONTACT FORM -->
 
-<form class="contact-form">
+<form class="contact-form" action="mailto:optionedge93@gmail.com" method="POST" enctype="text/plain">
 
 <div class="input-group">
-<input type="text" required>
+<input name="Full Name" type="text" required>
 <label>Full Name</label>
 </div>
 
 <div class="input-group">
-<input type="email" required>
+<input name="Email" type="email" required>
 <label>Email Address</label>
 </div>
 
 <div class="input-group">
-<input type="text" required>
+<input name="Subject" type="text" required>
 <label>Subject</label>
 </div>
 
 <div class="input-group textarea">
-<textarea required></textarea>
+<textarea name="Message" required></textarea>
 <label>Your Message</label>
 </div>
 
-<button class="send-btn">Send Message</button>
+<button class="send-btn" type="submit">Send Message</button>
 
 </form>
 
